@@ -26,4 +26,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f ecom-backend-container
       - name: Run Docker Container
-        run: docker run -d -p 5555:443 --name ecom-backend-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' shivarame/ecom_backend:latest
+        run: docker run -d -p 5555:22 --name ecom-backend-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' shivarame/ecom_backend:latest
